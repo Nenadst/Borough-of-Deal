@@ -1,0 +1,72 @@
+.btn {
+  &-box {
+    position: absolute;
+    top: 0;
+    right: 3rem;
+  }
+
+  &__header {
+    font-family: sans-serif;
+    color: $color-white;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    padding: 0.7rem 1.5rem;
+    display: inline-block;
+
+    &--orange {
+      text-decoration: none;
+      background-color: $color-orange;
+      margin-right: 1rem;
+    }
+
+    &--navy-blue {
+      text-decoration: none;
+      background-color: $color-navy-blue;
+    }
+  }
+
+  &_events-box-top {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__events-orange {
+    text-decoration: none;
+    font-weight: 500;
+    background-color: $color-orange;
+    color: $color-white;
+    text-transform: uppercase;
+    padding: 0.5rem 1rem;
+  }
+
+  &__button-box {
+    display: flex;
+  }
+
+  &__arrow-events {
+    @include btn-arrow($color-orange, 700);
+  }
+
+  &__arrow-news {
+    @include btn-arrow($color-navy-blue, 700);
+    margin-bottom: 3rem;
+  }
+
+  &__arrow-news-big {
+    @include btn-arrow($color-white, 500);
+    font-size: 1.4rem;
+  }
+
+  &__arrow-history {
+    @include btn-arrow($color-orange, 700);
+  }
+
+  &__download {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+}

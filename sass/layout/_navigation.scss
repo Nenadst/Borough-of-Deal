@@ -1,0 +1,58 @@
+.navigation {
+  position: relative;
+
+  &__nav {
+    padding-top: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+  }
+
+  &__line {
+    border-top: 1px solid rgba($color-navy-blue, 0.3);
+    border-bottom: 1px solid rgba($color-navy-blue, 0.3);
+    height: 6rem;
+    width: 100%;
+    position: absolute;
+    top: 5rem;
+  }
+
+  &__logo-box {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+  }
+
+  &__logo {
+    height: 8rem;
+    width: 8rem;
+    margin-right: 1rem;
+  }
+
+  &__logo-text {
+    font-size: 1.8rem;
+    font-weight: 800;
+    font-family: "Playfair Display";
+  }
+
+  &__list {
+    z-index: 10;
+  }
+
+  &__item {
+    list-style: none;
+    color: $color-navy-blue;
+    font-size: 1.5rem;
+    font-weight: 400;
+    display: inline-block;
+    margin-right: 0.5rem;
+    z-index: 1;
+    position: relative;
+  }
+
+  &__item:hover .dropdown {
+    display: block;
+  }
+}

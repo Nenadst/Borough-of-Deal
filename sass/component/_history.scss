@@ -1,0 +1,48 @@
+.history {
+  display: flex;
+  justify-content: space-between;
+  padding: 8rem 0 12rem 0;
+
+  @include respond(tab-land) {
+    justify-content: space-around;
+  }
+
+  &__box-left {
+    flex-basis: 40%;
+  }
+
+  &__img {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  &__box-right {
+    flex-basis: 40%;
+  }
+
+  &__text {
+    line-height: 1.6;
+    margin-bottom: 2rem;
+  }
+
+  &__img-mayor {
+    float: right;
+    height: 15rem;
+    margin-left: 3rem;
+  }
+
+  &__stamp-img {
+    height: 15rem;
+    position: absolute;
+    right: 22rem;
+    bottom: -10.6rem;
+
+    @include respond(tab-land) {
+      right: 10rem;
+    }
+  }
+
+  &__icon {
+    @include icon-arrow-right($color-orange);
+  }
+}

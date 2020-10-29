@@ -1,0 +1,14 @@
+.header {
+  background-image: url(/img/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+
+  &__text-box {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
