@@ -1,8 +1,8 @@
 .btn {
   &-box {
-    position: absolute;
-    top: 0;
-    right: 3rem;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 3rem;
   }
 
   &__header {
@@ -12,16 +12,29 @@
     text-transform: uppercase;
     padding: 0.7rem 1.5rem;
     display: inline-block;
+    border-radius: 0 0 0.4rem 0.4rem;
+    margin-right: 1rem;
 
-    &--orange {
+    &--orange:link,
+    &--orange:visited {
       text-decoration: none;
       background-color: $color-orange;
-      margin-right: 1rem;
     }
 
-    &--navy-blue {
+    &--orange:hover,
+    &--orange:active {
+      background-color: darken($color-orange, 15%);
+    }
+
+    &--navy-blue:link,
+    &--navy-blue:visited {
       text-decoration: none;
       background-color: $color-navy-blue;
+    }
+
+    &--navy-blue:hover,
+    &--navy-blue:active {
+      background-color: lighten($color-navy-blue, 15%);
     }
   }
 
@@ -35,6 +48,7 @@
     font-weight: 500;
     background-color: $color-orange;
     color: $color-white;
+    border-radius: 0.2rem;
     text-transform: uppercase;
     padding: 0.5rem 1rem;
   }
@@ -68,5 +82,6 @@
     text-transform: uppercase;
     font-size: 1.2rem;
     font-weight: 700;
+    color: $color-navy-blue;
   }
 }

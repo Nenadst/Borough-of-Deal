@@ -17,13 +17,13 @@
   </head>
   <body>
     <header class="header">
-      <div class="btn btn-box">
-        <a href="#" class="btn__header btn__header--orange">pay a bill</a>
-        <a href="#" class="btn__header btn__header--navy-blue">opra request</a>
-      </div>
       <div class="navigation">
-        <div class="navigation__line"></div>
-        <div class="container">
+        <div class="btn btn-box">
+          <a href="#" class="btn__header btn__header--orange">pay a bill</a>
+          <a href="#" class="btn__header btn__header--navy-blue">opra request</a>
+        </div>
+        <!-- <div class="navigation__line"></div> -->
+        <!-- <div class="container"> -->
           <nav class="navigation__nav">
             <a href="https://dealborough.com/" target="_blank" class="navigation__logo-box">
             <img src="/img/logo.png" alt="Hero image" class="navigation__logo" />             
@@ -59,12 +59,12 @@
               </li>
             </ul>
           </nav>
-        </div>
+        <!-- </div> -->
       </div>
       <div class="header__text-box">
       <h1 class="heading-primary">
-        <span class="heading-primary--main">Borough of Deal</span>
-        <span class="heading-primary--sub">
+        <span class="heading-primary__main">Borough of Deal</span>
+        <span class="heading-primary__sub">
           Deal is a borough in Monmouth County, New Jersey, United States
         </span>
       </h1>
@@ -86,8 +86,8 @@
               Vivamus suscipit tortor eget felis porttitor volutpat areu erat
             </p>
             <p class="events__date">
-              <span class="events__date--number">14</span>
-              <span class="events__date--month">Mar</span>
+              <time class="events__date--number">14</time>
+              <time class="events__date--month">Mar</time>
             </p>
             <p class="events__text events__text--thin">
               Curabitur aliquet quam id dui posuere blandit. Vivamus suscipit
@@ -108,8 +108,8 @@
               Vivamus suscipit tortor eget felis porttitor volutpat areu erat
             </p>
             <p class="events__date">
-              <span class="events__date--number">28</span>
-              <span class="events__date--month">Mar</span>
+              <time class="events__date--number">28</time>
+              <time class="events__date--month">Mar</time>
             </p>
             <p class="events__text events__text--thin">
               Curabitur aliquet quam id dui posuere blandit. Vivamus suscipit
@@ -130,8 +130,8 @@
               Vivamus suscipit tortor eget felis porttitor volutpat areu erat
             </p>
             <p class="events__date">
-              <span class="events__date--number">31</span>
-              <span class="events__date--month">Mar</span>
+              <time class="events__date--number">31</time>
+              <time class="events__date--month">Mar</time>
             </p>
             <p class="events__text events__text--thin">
               Curabitur aliquet quam id dui posuere blandit. Vivamus suscipit
@@ -156,7 +156,7 @@
       <div class="news">
       <div class="container">
         <div class="news__heading-box">
-          <h1 class="heading-primary--main">News & Announcements</h1>
+          <h1 class="heading-primary__main">News & Announcements</h1>
         </div>
         <div class="news__container">
           <div class="news__box-left">
@@ -362,7 +362,7 @@
             <span class="heading-secondary--history">
               The History
             </span>
-            <span class="heading-secondary--small">of the borough of deal</span>
+            <span class="heading-secondary__small">of the borough of deal</span>
           </h2>
             <img
               src="/img/history.jpg"
@@ -391,10 +391,10 @@
           </div>
           <div class="history__box-right">
             <h2 class="heading-secondary">
-            <span class="heading-secondary--history">
-              The Major
+            <span class="heading-secondary__mayor">
+              The Mayor
             </span>
-            <span class="heading-secondary--small">sam cohen</span>
+            <span class="heading-secondary__small">sam cohen</span>
           </h2>
             <p class="history__text">
               <img
@@ -490,7 +490,7 @@
             alt="Image 6"
             class="gallery__img gallery__img-6"
           />
-          <div class="gallery__overlay"><h4>view image</h4></div>
+          <div class="gallery__overlay"><p class="gallery__overlay-text"><strong>view image</strong> </p></div>
         </div>
       </div>
       </div>
@@ -507,48 +507,48 @@
         <div class="administration__container">
             <div class="administration__box-white"> 
           <h3 class="heading-tertiary heading-tertiary--left">Info</h3>
-          <p class="administration__text">
-            190 Norwood Avenue <br />
-            Norwood Avenue at Roseld Avenue <br /><br />
-            Please Address All Mail To: <br />
-            P.O. Box 56, <br />
-            Deal, NJ 07723 <br /><br />
-            Hours: 8:30 a.m. to 4:30 p.m. <br />
-            Monday through Friday <br /><br />
-            (732) 531-1454 Building & Personnel <br />
-            (732) 531-1455 Clerk <br />
-            (732) 531-0319 Tax Office <br />
-            (732) 531-1705 Fax
-          </p>
+          <div class="administration__text-box-left">
+          <address class="administration__text"> 190 Norwood Avenue </address>     
+          <address class="administration__text">Norwood Avenue at Roseld Avenue</address><br>
+          <p class="administration__text">Please Address All Mail To: </p>
+          <p class="administration__text">P.O. Box 56, </p>
+          <p class="administration__text">Deal, NJ 07723 </p><br>
+          <p class="administration__text">Hours: 8:30 a.m. to 4:30 p.m. </p>
+          <p class="administration__text">Monday through Friday </p><br>
+          <p class="administration__text"><a href="(732) 531-1454">(732) 531-1454</a>  Building & Personnel </p>
+          <p class="administration__text"><a href="(732) 531-1455 ">(732) 531-1455 </a> Clerk </p>
+          <p class="administration__text"><a href="(732) 531-0319">(732) 531-0319</a> Tax Office </p>
+          <p class="administration__text"><a href="(732) 531-1705">(732) 531-1705</a> Fax</p>
+        </div>
             </div>
         <div class="administration__box-gray">
           <h3 class="heading-tertiary heading-tertiary--right">Staff</h3>
-          <div class="administration__text-box">
-          <p class="administration__text administration__text--left">
-            <b>Borough Clerk/Administrator </b><br>
+          <div class="administration__text-box-right">
+          <p class="administration__text-gray">
+            <strong>Borough Clerk/Administrator </strong><br>
             Stephen R. Carasia <br>
-            Administrator@dealborough.com <br><br>            
-            <b>Deputy Clerk</b><br> 
+            <a href="Administrator@dealborough.com">Administrator@dealborough.com</a>  <br><br>            
+            <strong>Deputy Clerk</strong><br> 
             Michael W. Egan <br>
-            Deputyclerk@dealborough.com <br><br>            
-            <b> Tax Assessor</b><br>
+            <a href="Deputyclerk@dealborough.com">Deputyclerk@dealborough.com</a> <br><br>            
+            <strong> Tax Assessor</strong><br>
             Peter Barnett <br><br>           
-            <b> Tax and Utility Collector/Treasurer</b><br>
+            <strong> Tax and Utility Collector/Treasurer</strong><br>
             Theresa M. Davis <br>
-            Taxcollector@dealborough.com <br>            
+            <a href="Taxcollector@dealborough.com">Taxcollector@dealborough.com</a> <br>            
             </p>
-            <p class="administration__text">
-                <b> Chief Financial Officer</b><br>
+            <p class="administration__text-gray">
+                <strong> Chief Financial Officer</strong><br>
                 Thomas X. Seaman <br><br>               
-                <b> Auditor</b> <br>
+                <strong> Auditor</strong> <br>
                 Vincent Alvino <br>
                 Alvino & Shechter, LLC <br><br>                
-                <b> Borough Attorney</b><br>
+                <strong> Borough Attorney</strong><br>
                 Paul V. Fernicola <br>
                 Paul V. Fernicola & Associates, LLC <br><br>               
-                <b> Personnel & Building Department</b> <br>
+                <strong> Personnel & Building Department</strong> <br>
                 Alison Gavin  <br>
-                Building@dealborough.com</p>
+                <a href="Building@dealborough.com">Building@dealborough.com</a> </p>
         </div>
     </div>
   </div>
@@ -558,29 +558,29 @@
         <div class="footer">
           <h2 class="footer__heading-main ">Department of public safety</h2>
           <div class="footer__box">
-          <div class="footer__box-1">
+          <div class="footer__box-card">
             <h2 class="footer__heading-sub"> police department</h2>            
             <p class="footer__text">
               Municipal Building,<br>190 Norwood Avenue <br><br>
               Phone: 911 for Emergencies <br> Phone: (732) 531-1113 <br>  
               Fax; (732) 531-3231 <br><br>
-              <b>Chief</b><br> Ronen Neuman 
+              <strong>Chief</strong><br> Ronen Neuman 
             </p>
           </div>        
-          <div class="footer__box-1">
+          <div class="footer__box-card">
             <h2 class="footer__heading-sub"> first aid squad</h2>
             <p class="footer__text">
               Deal First Aid & Emergency Squad <br> 110 Brighton Avenue <br><br>
               (732) 531- 1000 <br> Emergencies <br> (732) 531- 1994 Business <br><br>
-              <b>Captain</b><br> Samuel Sitt
+              <strong>Captain</strong><br> Samuel Sitt
             </p>
           </div>
-          <div class="footer__box-1">
+          <div class="footer__box-card">
             <h2 class="footer__heading-sub"> fire department</h2>
             <p class="footer__text">
              Deal Fire Company No.2 <br> 110 Brighton Avenue <br> <br>
             (732) 531- 1000 <br> Emergencies <br> <br>
-            <b> Chief </b><br>Patrick Burgdorf  
+            <strong> Chief </strong><br>Patrick Burgdorf  
             </p>
           </div>
         </div>

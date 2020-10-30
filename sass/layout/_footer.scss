@@ -2,20 +2,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
-  position: absolute;
-  bottom: 0;
+  justify-content: flex-end;
   padding-bottom: 3rem;
 
   &__heading-main {
-    font-family: "Playfair Display";
+    font-family: "Playfair Display", sans-serif;
     font-size: 3.5rem;
     color: $color-white;
     margin-bottom: 8rem;
   }
 
   &__heading-sub {
-    font-family: "Roboto";
     color: $color-white;
     text-transform: uppercase;
     font-size: 1.7rem;
@@ -26,11 +23,10 @@
   &__box {
     display: flex;
     justify-content: space-between;
-    width: 50%;
+  }
 
-    @include respond(tab-land) {
-      width: 60%;
-    }
+  &__box-card:not(:last-child) {
+    margin-right: 14rem;
   }
 
   &__text {

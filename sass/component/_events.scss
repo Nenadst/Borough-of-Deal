@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 5rem;
 
   &__heading-box {
     display: flex;
@@ -20,13 +21,13 @@
 
   &__box-1 {
     padding: 0 5rem;
-    border-right: 1px solid $color-navy-blue;
+    border-right: 1px solid rgba($color-navy-blue, 0.2);
     flex-basis: 30%;
   }
 
   &__box-2 {
     padding: 0 5rem;
-    border-right: 1px solid $color-navy-blue;
+    border-right: 1px solid rgba($color-navy-blue, 0.2);
     flex-basis: 30%;
   }
 
@@ -48,7 +49,7 @@
 
   &__date {
     margin: 0.5rem 0 1.5rem 0;
-    font-family: "Playfair Display";
+    font-family: "Playfair Display", sans-serif;
 
     &--month {
       font-size: 1.5rem;

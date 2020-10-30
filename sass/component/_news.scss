@@ -1,6 +1,6 @@
 .news {
   &__heading-box {
-    height: 50vh;
+    min-height: 50vh;
     width: 91%;
     display: flex;
     justify-content: flex-end;
@@ -24,6 +24,7 @@
     flex-direction: column;
     justify-content: space-between;
     flex-basis: 38%;
+    margin-bottom: 15.5rem;
 
     @include respond(tab-land) {
       flex-basis: 40%;
@@ -36,7 +37,7 @@
 
   &__text-box {
     padding: 4rem 6rem 0 6rem;
-    margin-bottom: 4rem;
+    margin-bottom: 6rem;
 
     @include respond(tab-land) {
       margin-bottom: 1rem;
@@ -50,6 +51,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-bottom: 15.5rem;
 
     @include respond(tab-land) {
       flex-basis: 40%;
