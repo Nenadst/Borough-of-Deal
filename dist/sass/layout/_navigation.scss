@@ -1,0 +1,57 @@
+.navigation {
+  position: relative;
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 8rem;
+    border-top: 1px solid rgba($color-navy-blue, 0.3);
+    border-bottom: 1px solid rgba($color-navy-blue, 0.3);
+  }
+
+  &__logo-box {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-left: 8rem;
+  }
+
+  &__logo {
+    height: 5rem;
+    width: 5rem;
+    margin-right: 3rem;
+    transform: scale(1.6);
+  }
+
+  &__logo-text {
+    font-size: 1.8rem;
+    font-weight: 800;
+    font-family: "Playfair Display", sans-serif;
+    color: $color-navy-blue;
+  }
+
+  &__logo-text:active,
+  &__logo-text:hover {
+    color: $color-navy-blue;
+  }
+
+  &__item {
+    list-style: none;
+    color: $color-navy-blue;
+    font-size: 1.5rem;
+    font-weight: 400;
+    display: inline-block;
+    margin-right: 0.5rem;
+    position: relative;
+  }
+
+  &__item:active,
+  &__item:hover {
+    color: $color-navy-blue;
+  }
+
+  &__item:hover .dropdown {
+    display: block;
+  }
+}

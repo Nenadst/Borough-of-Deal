@@ -1,0 +1,87 @@
+.btn {
+  &-box {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 3rem;
+  }
+
+  &__header {
+    font-family: sans-serif;
+    color: $color-white;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    padding: 0.7rem 1.5rem;
+    display: inline-block;
+    border-radius: 0 0 0.4rem 0.4rem;
+    margin-right: 1rem;
+
+    &--orange:link,
+    &--orange:visited {
+      text-decoration: none;
+      background-color: $color-orange;
+    }
+
+    &--orange:hover,
+    &--orange:active {
+      background-color: darken($color-orange, 15%);
+    }
+
+    &--navy-blue:link,
+    &--navy-blue:visited {
+      text-decoration: none;
+      background-color: $color-navy-blue;
+    }
+
+    &--navy-blue:hover,
+    &--navy-blue:active {
+      background-color: lighten($color-navy-blue, 15%);
+    }
+  }
+
+  &_events-box-top {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__events-orange {
+    text-decoration: none;
+    font-weight: 500;
+    background-color: $color-orange;
+    color: $color-white;
+    border-radius: 0.2rem;
+    text-transform: uppercase;
+    padding: 0.5rem 1rem;
+  }
+
+  &__button-box {
+    display: flex;
+  }
+
+  &__arrow-events {
+    @include btn-arrow($color-orange, 700);
+  }
+
+  &__arrow-news {
+    @include btn-arrow($color-navy-blue, 700);
+    margin-bottom: 3rem;
+  }
+
+  &__arrow-news-big {
+    @include btn-arrow($color-white, 500);
+    font-size: 1.4rem;
+  }
+
+  &__arrow-history {
+    @include btn-arrow($color-orange, 700);
+  }
+
+  &__download {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: $color-navy-blue;
+  }
+}
