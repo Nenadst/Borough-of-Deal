@@ -67,7 +67,7 @@
 
     &--thin {
       font-size: 1.1rem;
-      margin-bottom: 1rem;
+      margin-bottom: 2rem;
     }
   }
 
@@ -80,7 +80,6 @@
 
   &__icon-arrow-right-small {
     @include icon-arrow-right($color-navy-blue);
-    margin-bottom: 2rem;
   }
 
   &__icon-arrow-right-big {

@@ -1,7 +1,7 @@
 .administration {
   &__container {
     display: flex;
-    border: 1px solid $color-navy-blue;
+    border: 1px solid rgba($color-navy-blue, 0.3);
     position: relative;
 
     @include respond(tab-land) {
@@ -16,7 +16,6 @@
 
   &__box-white {
     flex-basis: 30%;
-    z-index: 10;
   }
 
   &__text-box-left {

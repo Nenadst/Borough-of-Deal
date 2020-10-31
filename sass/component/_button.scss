@@ -14,6 +14,7 @@
     display: inline-block;
     border-radius: 0 0 0.4rem 0.4rem;
     margin-right: 1rem;
+    transition: all 0.3s;
 
     &--orange:link,
     &--orange:visited {
@@ -38,12 +39,8 @@
     }
   }
 
-  &_events-box-top {
-    display: flex;
-    justify-content: flex-end;
-  }
-
-  &__events-orange {
+  &__events-orange:link,
+  &__events-orange:visited {
     text-decoration: none;
     font-weight: 500;
     background-color: $color-orange;
@@ -51,28 +48,69 @@
     border-radius: 0.2rem;
     text-transform: uppercase;
     padding: 0.5rem 1rem;
+    transition: all 0.3s;
+  }
+
+  &__events-orange:hover,
+  &__events-orange:active {
+    background-color: darken($color-orange, 15%);
   }
 
   &__button-box {
     display: flex;
+    margin-bottom: 2rem;
+    margin-left: -0.5rem;
   }
 
-  &__arrow-events {
+  &__arrow:link,
+  &__arrow:visited {
     @include btn-arrow($color-orange, 700);
+    transition: all 0.3s;
   }
 
-  &__arrow-news {
-    @include btn-arrow($color-navy-blue, 700);
-    margin-bottom: 3rem;
+  &__arrow:hover {
+    transform: translateY(-0.2rem);
+    background-color: $color-orange;
+    color: $color-white;
+    padding: 0.5rem;
   }
 
-  &__arrow-news-big {
+  &__arrow:active {
+    transform: translateY(0);
+  }
+
+  &__arrow:hover .events__icon {
+    fill: $color-white;
+  }
+
+  &__arrow:hover .news__icon-arrow-right-small {
+    fill: $color-white;
+  }
+
+  &__arrow:hover .history__icon {
+    fill: $color-white;
+  }
+
+  &__arrow--big {
     @include btn-arrow($color-white, 500);
     font-size: 1.4rem;
   }
 
-  &__arrow-history {
-    @include btn-arrow($color-orange, 700);
+  &__arrow-blue:link,
+  &__arrow-blue:visited {
+    @include btn-arrow($color-navy-blue, 700);
+    transition: all 0.3s;
+  }
+
+  &__arrow-blue:hover {
+    transform: translateY(-0.2rem);
+    background-color: $color-navy-blue;
+    color: $color-white;
+    padding: 0.5rem;
+  }
+
+  &__arrow-blue:active {
+    transform: translateY(0);
   }
 
   &__download {
