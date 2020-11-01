@@ -29,7 +29,7 @@
   }
 
   &__box-gray {
-    background-color: $color-white-gray;
+    background-color: rgba($color-white-gray, 0.5);
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -37,7 +37,6 @@
     min-width: 70%;
     top: 3rem;
     right: -3rem;
-    z-index: -1;
   }
 
   &__text-box-right {
@@ -47,6 +46,8 @@
 
   &__text-gray {
     line-height: 1.5;
+    display: flex;
+    flex-direction: column;
   }
 
   &__text-gray:last-child {

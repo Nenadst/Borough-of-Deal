@@ -80,22 +80,23 @@ body {
   line-height: 1.5; }
 
 .administration__box-gray {
-  background-color: #e3e9ee;
+  background-color: rgba(227, 233, 238, 0.5);
   height: 100%;
   display: flex;
   flex-direction: column;
   position: absolute;
   min-width: 70%;
   top: 3rem;
-  right: -3rem;
-  z-index: -1; }
+  right: -3rem; }
 
 .administration__text-box-right {
   display: flex;
   margin-left: 5rem; }
 
 .administration__text-gray {
-  line-height: 1.5; }
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column; }
 
 .administration__text-gray:last-child {
   margin-left: 10rem; }
