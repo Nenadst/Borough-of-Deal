@@ -1,8 +1,15 @@
 .dropdown {
-  display: none;
-  position: absolute;
-  background-color: $color-navy-blue;
-  min-width: 19rem;
+  list-style: none;
+  font-size: 1.5rem;
+  font-weight: 400;
+  display: inline-block;
+  margin-right: 0.5rem;
+  position: relative;
+  color: $color-navy-blue;
+
+  &:hover &__content {
+    display: block;
+  }
 
   &__item:link,
   &__item:visited {
@@ -19,7 +26,19 @@
   }
 }
 
-.dropdown-button {
+.dropdown:hover .dropdown__button {
+  background-color: $color-navy-blue;
+  color: $color-white;
+}
+
+.dropdown__content {
+  display: none;
+  position: absolute;
+  background-color: $color-navy-blue;
+  min-width: 19rem;
+}
+
+.dropdown__button {
   &:link,
   &:visited {
     text-decoration: none;

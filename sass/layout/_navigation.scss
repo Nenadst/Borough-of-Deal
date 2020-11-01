@@ -36,21 +36,9 @@
     color: $color-navy-blue;
   }
 
-  &__item {
+  &__list {
     list-style: none;
-    font-size: 1.5rem;
-    font-weight: 400;
-    display: inline-block;
-    margin-right: 0.5rem;
-    position: relative;
-  }
-
-  &__item:active,
-  &__item:hover {
-    color: $color-navy-blue;
-  }
-
-  &__item:hover .dropdown {
-    display: block;
+    margin: 0;
+    padding: 0;
   }
 }
