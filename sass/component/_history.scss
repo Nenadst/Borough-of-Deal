@@ -7,6 +7,10 @@
     justify-content: space-around;
   }
 
+  @include respond(phone) {
+    flex-direction: column;
+  }
+
   &__box-left {
     flex-basis: 40%;
   }
@@ -39,6 +43,12 @@
 
     @include respond(tab-land) {
       right: 10rem;
+    }
+
+    @include respond(phone) {
+      height: 10rem;
+      bottom: -7.1rem;
+      right: 3rem;
     }
   }
 

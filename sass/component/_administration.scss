@@ -7,6 +7,10 @@
     @include respond(tab-land) {
       margin-bottom: 5rem;
     }
+
+    @include respond(phone) {
+      flex-direction: column;
+    }
   }
 
   &__heading-box {
@@ -37,6 +41,11 @@
     min-width: 70%;
     top: 3rem;
     right: -3rem;
+
+    @include respond(phone) {
+      position: static;
+      padding: 3rem 0;
+    }
   }
 
   &__text-box-right {

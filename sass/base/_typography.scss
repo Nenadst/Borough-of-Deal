@@ -32,6 +32,18 @@
     font-weight: 400;
     margin-bottom: 1rem;
   }
+
+  &__news {
+    font-family: "Playfair Display", sans-serif;
+    font-size: 4.5rem;
+    color: $color-navy-blue;
+    margin-bottom: 1rem;
+
+    @include respond(phone) {
+      font-size: 4rem;
+      text-align: center;
+    }
+  }
 }
 
 .heading-tertiary {

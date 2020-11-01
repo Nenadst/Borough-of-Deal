@@ -23,10 +23,18 @@
   &__box {
     display: flex;
     justify-content: space-between;
+
+    @include respond(phone) {
+      flex-direction: column;
+    }
   }
 
   &__box-card:not(:last-child) {
     margin-right: 14rem;
+
+    @include respond(phone) {
+      margin: 0 0 5rem 0;
+    }
   }
 
   &__text {

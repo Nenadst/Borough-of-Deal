@@ -55,6 +55,11 @@
     text-transform: uppercase;
     padding: 0.5rem 1rem;
     transition: all 0.3s;
+
+    @include respond(phone) {
+      margin-top: 0.5rem;
+      margin-left: 5rem;
+    }
   }
 
   &__events-orange:hover,
