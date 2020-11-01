@@ -7,6 +7,15 @@
   position: relative;
   color: $color-navy-blue;
 
+  @include respond(phone) {
+    background-color: $color-navy-blue;
+    color: $color-white;
+    width: 100%;
+    margin: 0;
+    font-size: 1.7rem;
+    // display: none;
+  }
+
   &:hover &__content {
     display: block;
   }
@@ -45,6 +54,10 @@
     color: $color-navy-blue;
     padding: 2rem 1rem;
     display: inline-block;
+
+    @include respond(phone) {
+      color: $color-white;
+    }
   }
 
   &:hover,

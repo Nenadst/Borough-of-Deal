@@ -116,6 +116,11 @@ body {
   border-radius: 0 0 0.4rem 0.4rem;
   margin-right: 1rem;
   transition: all 0.3s; }
+  @media only screen and (max-width: 48em) {
+    .btn__header {
+      padding: 1.2rem 2rem;
+      font-size: 1.6rem;
+      font-weight: 700; } }
   .btn__header--orange:link, .btn__header--orange:visited {
     text-decoration: none;
     background-color: #eaa347; }
@@ -219,6 +224,13 @@ body {
   margin-right: 0.5rem;
   position: relative;
   color: #073f62; }
+  @media only screen and (max-width: 48em) {
+    .dropdown {
+      background-color: #073f62;
+      color: #fff;
+      width: 100%;
+      margin: 0;
+      font-size: 1.7rem; } }
   .dropdown:hover .dropdown__content {
     display: block; }
   .dropdown__item:link, .dropdown__item:visited {
@@ -245,6 +257,9 @@ body {
   color: #073f62;
   padding: 2rem 1rem;
   display: inline-block; }
+  @media only screen and (max-width: 48em) {
+    .dropdown__button:link, .dropdown__button:visited {
+      color: #fff; } }
 
 .dropdown__button:hover, .dropdown__button:active {
   background-color: #073f62;
@@ -546,6 +561,9 @@ body {
     align-items: center;
     text-align: center;
     min-height: 45vh; }
+    @media only screen and (max-width: 48em) {
+      .header__text-box {
+        display: none; } }
 
 .navigation {
   position: relative; }
@@ -556,27 +574,58 @@ body {
     padding: 0 8rem;
     border-top: 1px solid rgba(7, 63, 98, 0.3);
     border-bottom: 1px solid rgba(7, 63, 98, 0.3); }
+    @media only screen and (max-width: 48em) {
+      .navigation__nav {
+        border: none;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center; } }
   .navigation__logo-box {
     text-decoration: none;
     display: flex;
     align-items: center;
     margin-left: 8rem; }
+    @media only screen and (max-width: 48em) {
+      .navigation__logo-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 3rem;
+        margin-left: 0; } }
   .navigation__logo {
     height: 5rem;
     width: 5rem;
     margin-right: 3rem;
     transform: scale(1.6); }
+    @media only screen and (max-width: 48em) {
+      .navigation__logo {
+        transform: scale(1.4);
+        margin: 0; } }
   .navigation__logo-text {
     font-size: 1.8rem;
     font-weight: 800;
     font-family: "Playfair Display", sans-serif;
     color: #073f62; }
+    @media only screen and (max-width: 48em) {
+      .navigation__logo-text {
+        font-size: 2rem;
+        margin-top: 1rem; } }
   .navigation__logo-text:active, .navigation__logo-text:hover {
     color: #073f62; }
   .navigation__list {
     list-style: none;
     margin: 0;
     padding: 0; }
+    @media only screen and (max-width: 48em) {
+      .navigation__list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%; } }
 
 .section-events {
   margin-top: 5rem; }
