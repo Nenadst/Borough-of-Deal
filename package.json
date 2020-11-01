@@ -4,7 +4,7 @@
   "description": "Landing page for Borough of Deal",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/style.css -w",
+    "compile:sass": "node-sass sass/main.scss dist/css/style.css -w",
     "deploy": "gh-pages -d dist"
   },
   "author": "Nenad Stojanovic",
