@@ -7,6 +7,17 @@
     align-items: flex-end;
     margin-bottom: 2rem;
 
+    @include respond(big-screen) {
+      min-height: 20vh;
+      padding: 5rem;
+    }
+
+    @include respond(tab-land) {
+      min-height: 10vh;
+      padding: 2rem;
+      justify-content: center;
+    }
+
     @include respond(phone) {
       min-height: 0;
       margin-top: 5rem;
@@ -22,7 +33,7 @@
 
     @include respond(tab-land) {
       justify-content: space-between;
-      padding: 0 5rem;
+      padding: 0 2rem;
     }
 
     @include respond(phone) {

@@ -17,5 +17,9 @@
       left: 15%;
       margin-right: 7rem;
     }
+
+    @include respond(small-phone) {
+      display: none;
+    }
   }
 }

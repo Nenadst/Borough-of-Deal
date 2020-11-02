@@ -22,6 +22,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      padding: 2rem;
     }
   }
 
@@ -31,8 +32,8 @@
     opacity: 1;
 
     @include respond(phone) {
-      min-width: 60%;
       margin-bottom: 4rem;
+      width: auto;
     }
 
     &:hover .gallery__overlay {

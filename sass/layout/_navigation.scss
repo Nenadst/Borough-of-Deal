@@ -4,10 +4,21 @@
   &__nav {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 0 8rem;
     border-top: 1px solid rgba($color-navy-blue, 0.3);
     border-bottom: 1px solid rgba($color-navy-blue, 0.3);
+
+    @include respond(tab-land) {
+      justify-content: space-between;
+      padding: 0 2rem;
+    }
+
+    @include respond(tab-land) {
+      justify-content: space-around;
+      padding: 0 2rem;
+    }
+
     @include respond(phone) {
       border: none;
       padding: 0;
@@ -20,6 +31,11 @@
 
   &__button {
     z-index: -1;
+
+    @include respond(tab-land) {
+      position: absolute;
+      top: 0;
+    }
     @include respond(phone) {
       background-color: $color-orange;
       height: 7rem;
@@ -44,6 +60,14 @@
     align-items: center;
     margin-left: 8rem;
 
+    @include respond(big-screen) {
+      margin-left: 0;
+    }
+
+    @include respond(tab-land) {
+      margin-left: 0;
+    }
+
     @include respond(phone) {
       display: flex;
       align-self: start;
@@ -57,6 +81,10 @@
     width: 5rem;
     margin-right: 3rem;
     transform: scale(1.6);
+
+    @include respond(tab-land) {
+      margin-right: 2rem;
+    }
 
     @include respond(phone) {
       transform: scale(1.4);
@@ -84,6 +112,7 @@
     list-style: none;
     margin: 0;
     padding: 0;
+
     @include respond(phone) {
       display: flex;
       flex-direction: column;
