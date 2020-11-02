@@ -669,16 +669,19 @@ body {
         align-items: center;
         text-align: center; } }
   .navigation__button {
-    background-color: #fff;
-    height: 7rem;
-    width: 7rem;
-    position: fixed;
-    top: 10rem;
-    right: 6rem;
-    border-radius: 50%;
-    text-align: center;
-    z-index: 200;
-    cursor: pointer; }
+    z-index: -1; }
+    @media only screen and (max-width: 48em) {
+      .navigation__button {
+        background-color: #fff;
+        height: 7rem;
+        width: 7rem;
+        position: fixed;
+        top: 10rem;
+        right: 6rem;
+        border-radius: 50%;
+        text-align: center;
+        z-index: 200;
+        cursor: pointer; } }
   .navigation__checkbox {
     display: none; }
   .navigation__logo-box {
