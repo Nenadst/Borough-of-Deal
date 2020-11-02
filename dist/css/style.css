@@ -646,7 +646,10 @@ body {
     min-height: 45vh; }
     @media only screen and (max-width: 48em) {
       .header__text-box {
-        display: none; } }
+        position: absolute;
+        top: 15%;
+        left: 15%;
+        margin-right: 7rem; } }
 
 .navigation {
   position: relative; }
@@ -665,6 +668,19 @@ body {
         flex-direction: column;
         align-items: center;
         text-align: center; } }
+  .navigation__button {
+    background-color: #fff;
+    height: 7rem;
+    width: 7rem;
+    position: fixed;
+    top: 10rem;
+    right: 6rem;
+    border-radius: 50%;
+    text-align: center;
+    z-index: 200;
+    cursor: pointer; }
+  .navigation__checkbox {
+    display: none; }
   .navigation__logo-box {
     text-decoration: none;
     display: flex;
@@ -673,11 +689,9 @@ body {
     @media only screen and (max-width: 48em) {
       .navigation__logo-box {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        align-self: start;
         align-items: center;
-        margin-bottom: 3rem;
-        margin-left: 0; } }
+        margin: 0 0 3rem 5rem; } }
   .navigation__logo {
     height: 5rem;
     width: 5rem;
@@ -695,7 +709,7 @@ body {
     @media only screen and (max-width: 48em) {
       .navigation__logo-text {
         font-size: 2rem;
-        margin-top: 1rem; } }
+        margin-left: 2rem; } }
   .navigation__logo-text:active, .navigation__logo-text:hover {
     color: #073f62; }
   .navigation__list {
@@ -708,7 +722,46 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 100%; } }
+        opacity: 0;
+        z-index: -1; } }
+  .navigation__checkbox:checked ~ .navigation__list {
+    opacity: 1;
+    z-index: 150;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    display: block;
+    top: 25%;
+    transition: all 0.8s; }
+  .navigation__icon {
+    position: relative;
+    margin-top: 3.3rem; }
+    .navigation__icon, .navigation__icon::before, .navigation__icon::after {
+      width: 3rem;
+      height: 2px;
+      background-color: #073f62;
+      display: inline-block; }
+    .navigation__icon::before, .navigation__icon::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      transition: all 0.2s; }
+    .navigation__icon::before {
+      top: -0.8rem; }
+    .navigation__icon::after {
+      top: 0.8rem; }
+  .navigation__button:hover .navigation__icon::before {
+    top: -1rem; }
+  .navigation__button:hover .navigation__icon::after {
+    top: 1rem; }
+  .navigation__checkbox:checked + .navigation__button .navigation__icon {
+    background-color: transparent; }
+  .navigation__checkbox:checked + .navigation__button .navigation__icon::before {
+    top: 0;
+    transform: rotate(135deg); }
+  .navigation__checkbox:checked + .navigation__button .navigation__icon::after {
+    top: 0;
+    transform: rotate(-135deg); }
 
 .section-events {
   margin-top: 5rem; }

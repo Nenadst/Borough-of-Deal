@@ -12,7 +12,10 @@
     min-height: 45vh;
 
     @include respond(phone) {
-      display: none;
+      position: absolute;
+      top: 15%;
+      left: 15%;
+      margin-right: 7rem;
     }
   }
 }
