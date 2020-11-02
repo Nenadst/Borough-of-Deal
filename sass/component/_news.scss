@@ -27,7 +27,7 @@
 
     @include respond(phone) {
       flex-direction: column;
-      // align-items: center;
+      padding: 0;
     }
   }
 
@@ -45,13 +45,16 @@
 
     @include respond(phone) {
       margin-bottom: 3rem;
-      // flex-direction: row;
-      flex-basis: 40%;
+      padding: 1rem;
     }
   }
 
   &__heading {
     margin-bottom: 2rem;
+
+    @include respond(phone) {
+      margin-bottom: 0.5rem;
+    }
   }
 
   &__text-box {
@@ -84,6 +87,7 @@
 
     @include respond(phone) {
       margin-bottom: 3rem;
+      padding: 1rem;
     }
   }
 
@@ -91,11 +95,21 @@
     &--bold {
       @include text-bold;
       margin-bottom: 1rem;
+
+      @include respond(phone) {
+        margin-bottom: 0.3rem;
+        font-size: 1rem;
+      }
     }
 
     &--thin {
       font-size: 1.1rem;
       margin-bottom: 2rem;
+
+      @include respond(phone) {
+        font-size: 0.9rem;
+        margin-bottom: 0.5rem;
+      }
     }
   }
 
@@ -121,6 +135,10 @@
     background-color: $color-orange;
     padding: 1.5rem 0 1.5rem 5rem;
     display: flex;
+
+    @include respond(phone) {
+      padding: 0.5rem;
+    }
   }
 
   &__row {

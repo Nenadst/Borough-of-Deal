@@ -58,7 +58,6 @@
 
     @include respond(phone) {
       margin-top: 0.5rem;
-      margin-left: 5rem;
     }
   }
 
@@ -71,6 +70,10 @@
     display: flex;
     margin-bottom: 2rem;
     margin-left: -0.5rem;
+
+    @include respond(phone) {
+      margin-bottom: 0.5rem;
+    }
   }
 
   &__arrow:link,

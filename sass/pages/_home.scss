@@ -36,4 +36,15 @@
   text-align: center;
   display: flex;
   justify-content: center;
+
+  @include respond(phone) {
+    background-image: linear-gradient(
+        to top,
+        (rgba($color-black, 0.8) 50%),
+        (rgba($color-black, 0) 100%)
+      ),
+      url(../img/footer-img.jpg);
+
+    padding-top: 6rem;
+  }
 }

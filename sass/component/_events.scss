@@ -11,8 +11,9 @@
     margin-bottom: 3rem;
 
     @include respond(phone) {
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
+      width: 100%;
     }
   }
 
@@ -38,7 +39,6 @@
     @include respond(phone) {
       border-bottom: 1px solid rgba($color-navy-blue, 0.2);
       border-right: none;
-      width: 45%;
       padding: 0;
     }
   }
@@ -50,7 +50,6 @@
     @include respond(phone) {
       border-bottom: 1px solid rgba($color-navy-blue, 0.2);
       border-right: none;
-      width: 45%;
       padding: 0;
       margin-top: 2rem;
     }
@@ -61,7 +60,6 @@
     flex-basis: 30%;
     @include respond(phone) {
       border: none;
-      width: 45%;
       padding: 0;
       margin-top: 2rem;
     }

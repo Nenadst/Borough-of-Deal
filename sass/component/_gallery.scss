@@ -17,12 +17,23 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+
+    @include respond(phone) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
   &__img-box {
     width: 16.6%;
     position: relative;
     opacity: 1;
+
+    @include respond(phone) {
+      min-width: 50%;
+      margin-bottom: 4rem;
+    }
 
     &:hover .gallery__overlay {
       opacity: 1;
