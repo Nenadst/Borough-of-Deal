@@ -13,6 +13,10 @@
 
   &__box-left {
     flex-basis: 40%;
+
+    @include respond(phone) {
+      margin-bottom: 4rem;
+    }
   }
 
   &__img {

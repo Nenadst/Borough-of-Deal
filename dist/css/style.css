@@ -418,7 +418,7 @@ body {
   opacity: 1; }
   @media only screen and (max-width: 48em) {
     .gallery__img-box {
-      min-width: 50%;
+      min-width: 60%;
       margin-bottom: 4rem; } }
   .gallery__img-box:hover .gallery__overlay {
     opacity: 1;
@@ -461,6 +461,9 @@ body {
       flex-direction: column; } }
   .history__box-left {
     flex-basis: 40%; }
+    @media only screen and (max-width: 48em) {
+      .history__box-left {
+        margin-bottom: 4rem; } }
   .history__img {
     width: 100%;
     margin-bottom: 1rem; }
@@ -732,7 +735,7 @@ body {
         width: 7rem;
         position: fixed;
         top: 8rem;
-        right: 6rem;
+        right: 2rem;
         border-radius: 50%;
         text-align: center;
         z-index: 200;
