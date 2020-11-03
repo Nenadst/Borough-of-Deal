@@ -730,7 +730,7 @@ body {
   .navigation__nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 0 8rem;
     border-top: 1px solid rgba(7, 63, 98, 0.3);
     border-bottom: 1px solid rgba(7, 63, 98, 0.3); }
@@ -751,7 +751,9 @@ body {
         align-items: center;
         text-align: center; } }
   .navigation__button {
-    z-index: -1; }
+    z-index: -1;
+    position: absolute;
+    top: 0; }
     @media only screen and (max-width: 75em) {
       .navigation__button {
         position: absolute;
@@ -790,11 +792,11 @@ body {
   .navigation__logo {
     height: 5rem;
     width: 5rem;
-    margin-right: 3rem;
+    margin: 0 3rem;
     transform: scale(1.6); }
     @media only screen and (max-width: 75em) {
       .navigation__logo {
-        margin-right: 2rem; } }
+        margin: 0 2rem 0 0; } }
     @media only screen and (max-width: 48em) {
       .navigation__logo {
         transform: scale(1.4);
@@ -812,7 +814,6 @@ body {
     color: #073f62; }
   .navigation__list {
     list-style: none;
-    margin: 0;
     padding: 0; }
     @media only screen and (max-width: 48em) {
       .navigation__list {

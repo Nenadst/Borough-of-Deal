@@ -4,7 +4,7 @@
   &__nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 0 8rem;
     border-top: 1px solid rgba($color-navy-blue, 0.3);
     border-bottom: 1px solid rgba($color-navy-blue, 0.3);
@@ -31,6 +31,8 @@
 
   &__button {
     z-index: -1;
+    position: absolute;
+    top: 0;
 
     @include respond(tab-land) {
       position: absolute;
@@ -79,11 +81,11 @@
   &__logo {
     height: 5rem;
     width: 5rem;
-    margin-right: 3rem;
+    margin: 0 3rem;
     transform: scale(1.6);
 
     @include respond(tab-land) {
-      margin-right: 2rem;
+      margin: 0 2rem 0 0;
     }
 
     @include respond(phone) {
@@ -110,7 +112,6 @@
 
   &__list {
     list-style: none;
-    margin: 0;
     padding: 0;
 
     @include respond(phone) {
